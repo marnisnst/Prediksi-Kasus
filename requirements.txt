@@ -1,9 +1,9 @@
-streamlit
-pandas
-numpy
-scikit-learn
+streamlit==1.35.0
+pandas==2.2.2
+numpy==1.24.3
+scikit-learn==1.3.2
 tensorflow==2.12.0
 keras-tuner==1.3.5
-matplotlib
-openpyxl
-joblib
+matplotlib==3.7.1
+openpyxl==3.1.2
+joblib==1.2.0
