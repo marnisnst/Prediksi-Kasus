@@ -141,3 +141,23 @@ if os.path.exists(MODEL_PATH):
         st.pyplot(fig)
     else:
         st.warning("Data tidak cukup untuk prediksi (butuh minimal 12 bulan per kecamatan).")
+print("Memulai aplikasi...")
+
+import streamlit as st
+import pandas as pd
+import joblib
+
+print("Import selesai")
+
+# Coba load scaler dan encoder
+try:
+    scaler = joblib.load("scaler.pkl")
+    print("Berhasil load scaler")
+except Exception as e:
+    print("Gagal load scaler:", e)
+
+try:
+    le = joblib.load("label_encoder.pkl")
+    print("Berhasil load label encoder")
+except Exception as e:
+    print("Gagal load label encoder:", e)
